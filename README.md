@@ -16,7 +16,7 @@ These scripts convert directories of DICOM data into nrrd files using [3D Slicer
   * creates a patientMap.json that maps MRN to patient-#####  (contains PHI)
   * creates a studyMap.json that maps MRN and original study subdirectory name to study-#####  (contains PHI)
 
-* `studyMeta.sh` creates tables of patient ID information
+* `studyMeta.sh` creates tables of patient ID information (optional - an example of how to extract data at the study level)
   * in the source data directory (hardcoded) creates the following:
     * `studyMeta.dump` with a line for StudyData,PatientID,PatientAge for each study (contains PHI)
     * `studyMeta.txt` with same data on one line (contains PHI)
